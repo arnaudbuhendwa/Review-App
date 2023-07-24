@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import MovieList from './components/MovieList';
 
+// Defining the main functional component named 'App'.
 function App() {
+  // It returns a div containing an h1 element and the 'MovieList' component.
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>The Lord Of The Rings Movie Review</h1>
+      <MovieList />
     </div>
   );
 }
+
 
 export default App;
